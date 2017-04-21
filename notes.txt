@@ -1,0 +1,52 @@
+Tree
+
+-Depth & Height
+	-The depth of a node is the number of edges from the node to the tree's root node.
+	-A root node will have a depth of 0.
+	-The height of a node is the number of edges on the longest path from the node to a leaf.
+	-A leaf node will have a height of 0.
+	
+	Properties of a tree:
+
+	-The height of a tree would be the height of its root node,
+		or equivalently, the depth of its deepest node.
+	Note that depth doesn't make sense for a tree.
+	-The diameter (or width) of a tree is the number of nodes on the longest path between any two leaf nodes. 
+	The tree below has a diameter of 6 nodes.
+
+
+
+Tree Traversal
+
+	-Breadth first is a queue, depth first is a stack.
+	-For breadth first, add all children to the queue, then pull the head and do a breadth first search on it, using the same queue.
+	-For depth first, add all children to the stack, then pop and do a depth first on that node, using the same stack.
+
+ - Depth first search
+ 	- Pre-Order
+ 		1. Visit root
+ 		2. Traverse the left subtree
+ 		3. Traverse the right subtree
+ 	- In-Order
+ 		1. Traverse the left most subtree starting at the left external node
+ 		2. Visit the root
+ 		3. Traverse the right subtree starting at the left external node
+ 	- Post-Order
+ 		1. Traverse all the left external nodes starting with the left most 
+ 		   subtree which is then followed by bubble-up all the internal nodes
+ 		2.  Traverse the right subtree starting at the left external node which 
+ 		   is then followed by bubble-up all the internal nodes 
+ 		3. Visit the root  
+
+ - Breadth First search	
+ 
+ 
+ 
+ 
+ 
+ B-Tree
+ -A B-tree is a self-balancing tree data structure that keeps data sorted and allows searches, sequential access, 
+ insertions, and deletions in logarithmic time. The B-tree is a generalization of a binary search tree in that 
+ a node can have more than two children (Comer 1979, p. 123). Unlike self-balancing binary search trees, the B-tree 
+ is optimized for systems that read and write large blocks of data. B-trees are a good example of a data structure 
+ for external memory. It is commonly used in databases and filesystems.
